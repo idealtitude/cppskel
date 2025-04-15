@@ -1,5 +1,5 @@
 LOCALBIN = $(HOME)/.local/bin
-CURDIR = $(CWD)
+CURDIR = $(PWD)
 PYSCRIPT = skeleton_setup.py
 BIN = cppskel
 
