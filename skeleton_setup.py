@@ -28,7 +28,7 @@ import argparse
 
 
 # App version
-__app_name__	 : str = "skeleton_setup"
+#__app_name__	 : str = "skeleton_setup"
 __app_version__	  : str = "0.1.0"
 
 
@@ -41,10 +41,10 @@ APP_SKELETON :str = os.path.join(APP_PATH, "skeleton")
 
 
 # Command line arguments
-def get_args() -> Any:
+def get_args(cppskel_path: str) -> Any:
     """Parsing command line arguments"""
     parser: Any = argparse.ArgumentParser(
-        prog=f"{__app_name__}", description="skeleton_setup sets up the file and variables in the C++ skeleton folder", epilog="Documentation is in doc/documentation.md"
+        prog=cppskel_path, description=f"{cppskel_path} sets up the file and variables in the C++ skeleton folder", epilog="Documentation is in skeleton/doc/documentation.md"
     )
 
     parser.add_argument("name", nargs=1, help="Project name")
@@ -95,6 +95,11 @@ def setup_files(files: list[str], project_name: str) -> None:
         # Move 'app.conf' to <project_name>.conf
         if os.path.basename(new_elem) == "app.conf":
             new_new_elem = new_elem.replace("app.conf", f"{project_name}.conf")
+            shutil.move(new_elem, new_new_elem)
+            continue
+        # Move 'app_logo-1024x1021.svg' to <project_name>_logo-1024x1024.svg
+        if os.path.basename(new_elem) == "app_logo-1024x1024.svg":
+            new_new_elem = new_elem.replace("app_logo-1024x1024.svg", f"{project_name}_logo-1024x1024.svg")
             shutil.move(new_elem, new_new_elem)
 
 
@@ -164,7 +169,7 @@ def main(arguments: list[str]) -> int:
         print(f"\033[91mError:\033[0m Missing argument(s); do `{__app_name__}` --help to display the help message")
         return EXIT_FAILURE
 
-    args: Any = get_args()
+    args: Any = get_args(os.path.basename(arguments[0]))
 
     benchmark_perf    : int = 0
     benchmark_process : int = 0

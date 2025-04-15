@@ -4,6 +4,8 @@
 
 This utility copy a C++ skeleton folder and set it up with the name you choose.
 
+![cppskel logo](./cppskel_logo-512x512.png "cppskel logo")
+
 ### Presentation
 
 As I often reuse or redo the same kind of classes, functionalities, and/or logic, in my C++ project, I've created this C++ Project Skeleton to avoid any tedious and repetitive tasks that occure each time.
@@ -19,7 +21,19 @@ The Python script that comes with this repository, does a copy of the C++ `skele
 
 ### Installation
 
-As "CPP Project Skeleton" can simply be used out of the box, it does not require an installation. That being said you can make the Python script utility accessible from your path by linking it in your `/$HOME/bin` or `/$HOME/.local/bin` folders; simply as follow:
+As "CPP Project Skeleton" can simply be used out of the box, it does not require an installation. That being said you can use the provided `Makefile`:
+
+```bash
+git clone https://github.com/idealtitude/cppskel.git
+# Or download the zip file and:
+# unzip cppskel.zip
+cd cppskel
+make install
+```
+
+And then you can simply invoke directly the command `cppskel` from any directory where you want to create a copy of the C++ skeleton...
+
+Or if your prefer to do it manually, make the Python script utility accessible from your path by linking it in your `/$HOME/bin` or `/$HOME/.local/bin` folders; simply as follow:
 
 ```bash
 # In this example I've named the link `cppskel`

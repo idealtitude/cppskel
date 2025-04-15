@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024">
+    <defs>
+        <filter id="b" width="1.127" height="1.169" x="-.063" y="-.085" style="color-interpolation-filters:sRGB">
+            <feGaussianBlur result="blur" stdDeviation="10.141"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="atop" result="composite1"/>
+            <feComposite in2="composite1" operator="in" result="composite2"/>
+            <feComposite in2="composite2" operator="in" result="composite3"/>
+        </filter>
+        <filter id="a" width="1.127" height="1.169" x="-.063" y="-.085" style="color-interpolation-filters:sRGB">
+            <feGaussianBlur result="blur" stdDeviation="10.141"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="atop" result="composite1"/>
+            <feComposite in2="composite1" operator="in" result="composite2"/>
+            <feComposite in2="composite2" operator="in" result="composite3"/>
+        </filter>
+        <filter id="g" width="1.028" height="1.09" x="-.014" y="-.045" style="color-interpolation-filters:sRGB">
+            <feGaussianBlur result="blur" stdDeviation="2.165"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="atop" result="composite1"/>
+            <feComposite in2="composite1" operator="in" result="composite2"/>
+            <feComposite in2="composite2" operator="in" result="composite3"/>
+        </filter>
+        <filter id="d" width="1.049" height="1.112" x="-.025" y="-.056" style="color-interpolation-filters:sRGB">
+            <feGaussianBlur result="blur" stdDeviation="4.87"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="atop" result="composite1"/>
+            <feComposite in2="composite1" operator="in" result="composite2"/>
+            <feComposite in2="composite2" operator="in" result="composite3"/>
+        </filter>
+        <path id="h" d="M160 560h784v320H160z"/>
+        <path id="e" d="M128 144h768v352H128z"/>
+        <path id="f" d="M160 560h784v320H160z"/>
+        <path id="c" d="M128 144h768v352H128z"/>
+    </defs>
+    <g style="display:inline">
+        <rect width="1024" height="1024" ry="128" style="fill:#162d50;fill-opacity:1;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"/>
+    </g>
+    <path d="M304 489.265v238.981a8.856 8.856 44.828 0 0 8.91 8.856l367.122-2.21a8.016 8.016 134.828 0 0 7.968-8.016V490.473a9.32 9.32 45 0 0-9.318-9.318H456.2a13.27 13.27 31.717 0 1-11.866-7.333l-8.108-16.217a15.29 15.29 31.717 0 0-13.672-8.45h-94.78a12.58 12.58 148.283 0 0-11.249 6.952l-8.897 17.795A34.35 34.35 103.283 0 0 304 489.265" style="fill:#0b0b28;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;filter:url(#a)" transform="matrix(1.27524 0 0 1.19238 -309.315 -448.678)"/>
+    <path d="M304 489.265v238.981a8.856 8.856 44.828 0 0 8.91 8.856l367.122-2.21a8.016 8.016 134.828 0 0 7.968-8.016V490.473a9.32 9.32 45 0 0-9.318-9.318H456.2a13.27 13.27 31.717 0 1-11.866-7.333l-8.108-16.217a15.29 15.29 31.717 0 0-13.672-8.45h-94.78a12.58 12.58 148.283 0 0-11.249 6.952l-8.897 17.795A34.35 34.35 103.283 0 0 304 489.265" style="fill:#06f;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" transform="matrix(1.27524 0 0 1.19238 -329.118 -477.592)"/>
+    <path d="M304 489.265v238.981a8.856 8.856 44.828 0 0 8.91 8.856l367.122-2.21a8.016 8.016 134.828 0 0 7.968-8.016V490.473a9.32 9.32 45 0 0-9.318-9.318H456.2a13.27 13.27 31.717 0 1-11.866-7.333l-8.108-16.217a15.29 15.29 31.717 0 0-13.672-8.45h-94.78a12.58 12.58 148.283 0 0-11.249 6.952l-8.897 17.795A34.35 34.35 103.283 0 0 304 489.265" style="fill:#0b0b28;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;filter:url(#b)" transform="matrix(1.27524 0 0 1.19238 76.378 82.277)"/>
+    <path d="M304 489.265v238.981a8.856 8.856 44.828 0 0 8.91 8.856l367.122-2.21a8.016 8.016 134.828 0 0 7.968-8.016V490.473a9.32 9.32 45 0 0-9.318-9.318H456.2a13.27 13.27 31.717 0 1-11.866-7.333l-8.108-16.217a15.29 15.29 31.717 0 0-13.672-8.45h-94.78a12.58 12.58 148.283 0 0-11.249 6.952l-8.897 17.795A34.35 34.35 103.283 0 0 304 489.265" style="fill:#cdde87;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" transform="matrix(1.27524 0 0 1.19238 56.574 53.363)"/>
+    <text xml:space="preserve" style="font-size:300px;font-family:&quot;Keter YG&quot;;-inkscape-font-specification:&quot;Keter YG&quot;;white-space:pre;shape-inside:url(#c);display:inline;fill:#00112b;fill-opacity:1;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;filter:url(#d)" transform="matrix(1.39396 0 0 1.39396 19.815 -89.225)"><tspan x="128" y="421.441">CPP</tspan></text>
+    <text xml:space="preserve" style="font-size:300px;font-family:&quot;Keter YG&quot;;-inkscape-font-specification:&quot;Keter YG&quot;;white-space:pre;shape-inside:url(#e);display:inline;fill:#d5f6ff;fill-opacity:1;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" transform="matrix(1.39396 0 0 1.39396 -2.72 -95.848)"><tspan x="128" y="421.441">CPP</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:144px;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;white-space:pre;shape-inside:url(#f);display:inline;fill:#00112b;fill-opacity:1;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;filter:url(#g)" transform="matrix(2.32245 0 0 2.32245 -288.47 -751.232)"><tspan x="160" y="691.779">SKEL</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:144px;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;white-space:pre;shape-inside:url(#h);display:inline;fill:#d5f6ff;fill-opacity:1;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" transform="matrix(2.32245 0 0 2.32245 -288.47 -767.232)"><tspan x="160" y="691.779"><tspan style="display:inline">SKEL</tspan></tspan></text>
+</svg>

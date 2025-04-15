@@ -6,3 +6,4 @@ data/help.txt
 data/app.conf
 doc/documentation.md
 .gitignore
+icons/app_logo-1024x1024.svg
