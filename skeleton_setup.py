@@ -185,7 +185,7 @@ def main(arguments: list[str]) -> int:
         clean_name = clean_name.strip()
         clean_name = clean_name.replace(' ', '_')
         for letter in clean_name:
-            if letter not in string.ascii_letters or letter not in string.digits:
+            if letter not in string.ascii_letters or letter not in string.digits or letter not in ['-', '_']:
                 clean_name.replace(letter, '')
         if setup_skeleton(clean_name):
             if args.benchmark:

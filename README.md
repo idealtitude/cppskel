@@ -15,9 +15,9 @@ The Python script that comes with this repository, does a copy of the C++ `skele
 
 **Imporant:**
 
-* the script requires a name for the copy of the project folder, passed as a command line argument, this name is going to be used to rename some files and in the template string substitutions, so choose the name with this in mind
-* if the name contains non ASCII characters or spaces, they're going to be removed in the case of non ASCII characters, or replaced by underscores in the case of spaces
-* the new roject folder is copied in your current working directory!
+* the script requires a name for the copy of the project folder destnation, passed as a command line argument, this name is going to be used to rename some files and in the template string substitutions, so choose the name with this in mind
+* if the name contains characters other than ASCII letters, digits, dash `-`, and underscore `_`, or if it contains spaces, they're going to be removed in the case of non authorized characters, or replaced by underscores in the case of spaces
+* the new project folder is copied in your current working directory!
 
 ### Installation
 
@@ -37,9 +37,9 @@ Or if your prefer to do it manually, make the Python script utility accessible f
 
 ```bash
 # In this example I've named the link `cppskel`
-ln -s "/$HOME/<path to>/skeleton.py" "/$HOME/bin/cppskel"
+ln -s "/$HOME/<path to>/skeleton.py" "/$HOME/.local/bin/cppskel"
 # Then you just have to do:
-cd any/location
+cd any/location/you/want
 cppskel <project name> # name of your project
 ```
 
@@ -51,7 +51,7 @@ So `cd` in the directory where you want to create your new project, then call th
 
 ```bash
 # Instantiate (copy) the skeleton in current working directory
-skeleton_setup.py <ProjectName>
+/path/to/skeleton_setup.py <ProjectName>
 ```
 
 ## C++ Skeleton Usage
@@ -60,7 +60,7 @@ skeleton_setup.py <ProjectName>
 
 The documentation explains the C++ code...
 
-TODO:  complete this section
+*TODO:*  complete this section
 
 **Note:** the `skeleton` directory is still a work in progress! The informations provided below may not be applicable for the moment
 
