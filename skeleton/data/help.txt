@@ -1,0 +1,5 @@
+Usage: {{app}} [OPTIONS]...
+
+Options:
+  -h, --help      Display this help message and exit
+  -v, --version  Display {{app}} version and exit

@@ -1,0 +1,8 @@
+src/main.cpp
+Makefile
+README.md
+tmp/launch.json
+data/help.txt
+data/app.conf
+doc/documentation.md
+.gitignore

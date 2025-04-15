@@ -1,7 +1,9 @@
 # Perso
+bin/*
+build/
 tmp/
 .vscode/
-cppskel.code-workspace
+{{app}}.code-workspace
 
 # C, C++
 # Prerequisites
