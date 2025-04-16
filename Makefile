@@ -3,7 +3,7 @@ CURDIR = $(PWD)
 PYSCRIPT = skeleton_setup.py
 BIN = cppskel
 
-.PHONY install uninstall doc manpage
+.PHONY: install uninstall doc manpage
 
 $(LOCALBIN):
 	@mkdir -p $@
