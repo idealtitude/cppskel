@@ -7,12 +7,12 @@ Init::Init(const std::string& confp, const std::string& prefsp):
 	parse_file(prefsp, 1);
 }
 
-Umap Init::return_config() const
+Umap_t Init::return_config() const
 {
     return _config;
 }
 
-Umap Init::return_prefs() const
+Umap_t Init::return_prefs() const
 {
     return _prefs;
 }
@@ -23,7 +23,7 @@ void Init::parse_file(const std::string& file, int curmap)
 	std::regex keyval_ptn{R"(^([a-z0-9_]+) ?= ?\"([^"]+)\"$)"};
 	std::smatch _m;
 	std::string current_section;
-	Umap& current_map = (curmap == 0) ? _config : _prefs;
+	Umap_t& current_map = (curmap == 0) ? _config : _prefs;
 
 	File current_file(file, File::Mode::READ);
 
@@ -63,7 +63,6 @@ void Init::parse_file(const std::string& file, int curmap)
 	}
 	else
 	{
-		// TODO: use copy constructor?
 		init_status.set_status(true, current_file.file_status.status_type(), current_file.file_status.status_msg());
 	}
 }

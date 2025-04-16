@@ -13,7 +13,7 @@
 
 namespace fs = std::filesystem;
 
-using Umap = std::unordered_map<std::string, std::unordered_map<std::string, std::string>>;
+using Umap_t = std::unordered_map<std::string, std::unordered_map<std::string, std::string>>;
 
 class Init
 {
@@ -32,14 +32,14 @@ class Init
     Status init_status;
 
     //Methods
-    Umap return_config() const;
-    Umap return_prefs() const;
+    Umap_t return_config() const;
+    Umap_t return_prefs() const;
 
   private:
     // Attributes
     //std::string config_path;
-    Umap _config;
-    Umap _prefs;
+    Umap_t _config;
+    Umap_t _prefs;
 
     //Methods
     //bool dir_exists(const std::string& dir_path);
